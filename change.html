@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="flex flex-col items-center justify-center">
+      <nav class="flex items-center justify-center">
+        <div
+          class="flex flex-row justify-between items-center w-screen h-16 px-7"
+        >
+          <img src="./icons/devchallenges-light.svg" alt="devchallenges" />
+            <div class=" flex items-center gap-3 ">
+                
+                <img
+                  src="https://placekitten.com/32/32"
+                  alt="foto"
+                  class="w-[32px] rounded-md"
+                />
+                <p class=" font-bold text-xs">Xanthe Neal</p>
+                <button><img src="./icons/arrow.svg" alt=""></button>
+            </div>
+        </div>
+      </nav>
+      <div>
+        <div class="flex flex-col justify-center items-start my-4 ">
+          <a href="" class=" text-[#2D9CDB] ml-2">&#60 Back</a>
+        </div>
+        <div
+          class="w-screen md:w-[845px] md:border md:border-[#D3D3D3] rounded-xl pr-10"
+        >
+          <div class="flex flex-row justify-between items-center mt-6 px-5">
+            <div class="w-full">
+              <h2 class="text-2xl font-normal">Change Info</h2>
+              <p class="text-[13px] text-[#828282]">
+                Changes will be reflected to every services
+
+              </p>
+            </div>
+          </div>
+          <form class="py-6 pl-12">
+            <div class="  flex flex-row items-center gap-7">
+                <img
+                src="https://placekitten.com/100/100"
+                alt="foto"
+                class="w-[72px] rounded-md"
+              />
+              <p>
+                CHANGE PHOTO
+              </p>
+            </div>
+            <div class=" flex flex-col my-3">
+                <label for="">Name</label>
+                <input type="text" placeholder="Enter your name..." class=" border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl" >
+            </div>
+            <div class=" flex flex-col my-3">
+                <label for="">Bio</label>
+                <input type="text" placeholder="Enter your bio..." class=" border border-[#BDBDBD] w-full md:w-[416px] h-[91px] pl-4 pb-8 rounded-xl" >
+            </div>
+            <div class=" flex flex-col my-3">
+                <label for="">Phone</label>
+                <input type="text" placeholder="Enter your phone..." class=" border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl" >
+            </div>
+            <div class=" flex flex-col my-3">
+                <label for="">Email</label>
+                <input type="text" placeholder="Enter your email..." class=" border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl" >
+            </div>
+            <div class=" flex flex-col my-3">
+                <label for="">Password</label>
+                <input type="password" placeholder="Enter your new password..." class=" border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl" >
+            </div>
+            <button class=" bg-[#2F80ED] text-white w-[82px] h-[38px] rounded-lg">Save</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

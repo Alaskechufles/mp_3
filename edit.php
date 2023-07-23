@@ -12,17 +12,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $_SESSION["show_bio"] = $_POST["bio_ch"];
     $_SESSION["show_phone"] = $_POST["phone_ch"];
     $_SESSION["show_email"] = $_POST["email_ch"];
+
     $_SESSION["show_password"] = $_POST["password_ch"];
 
-    $id = $_SESSION["datos"]["id"];
 
+    $id = $_SESSION["datos"]["id"];
 
     $ch_img = $_SESSION["show_img"];
     $ch_nombre = $_SESSION["show_nombre"];
     $ch_bio = $_SESSION["show_bio"];
     $ch_phone = $_SESSION["show_phone"];
     $ch_email = $_SESSION["show_email"];
-    $ch_pass = $_SESSION["show_password"];
+    $ch_pass = password_hash($_SESSION["show_password"], PASSWORD_DEFAULT);
 
 
     $queryUP = "UPDATE usuarios SET nombre='$ch_nombre', bio='$ch_bio', phone='$ch_phone', email='$ch_email', pass='$ch_pass', img='$ch_img' WHERE id = '$id';";
@@ -36,7 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $confirm = $mysqli->query($queryC);
 
     $numFilasC = $confirm->num_rows;
-    var_dump($numFilasC);
+
+
+
     if ($numFilasC === 1) {
 
         $datos2 = $confirm->fetch_assoc();

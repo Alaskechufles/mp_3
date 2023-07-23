@@ -32,7 +32,8 @@
                     </div>
                     <div class="flex border border-[#BDBDBD] h-[48px] pl-3 gap-3 rounded-xl">
                         <img src="./icons/lock.svg" alt="icono candado" class="w-6" />
-                        <input type="text" class="outline-none w-full rounded-xl" placeholder="Password" name="pass" />
+                        <input type="password" class="outline-none w-full rounded-xl" placeholder="Password"
+                            name="pass" />
                     </div>
                     <div class=" text-red-600">
                         <?php
@@ -67,6 +68,7 @@
         <div class="flex flex-row justify-between text-[#BDBDBD] w-[375px]">
             <p class="text-sm">created by DiegoHC</p>
             <p class="text-sm">devChallenges.io</p>
+
         </div>
     </main>
 </body>

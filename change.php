@@ -38,14 +38,11 @@ if (!isset($_SESSION["datos"])) {
                     </div>
                 </div>
             </div>
-            <ul id="menu"
-                class="hidden flex-col justify-center items-center  h-44 w-48 border rounded-2xl bg-white absolute right-10 top-16 ">
-                <a href="personal.php"
-                    class="hover:bg-gray-200 flex justify-center items-center w-4/5 h-1/4 rounded-2xl">
+            <ul id="menu" class="hidden flex-col justify-center items-center  h-44 w-48 border rounded-2xl bg-white absolute right-10 top-16 ">
+                <a href="personal.php" class="hover:bg-gray-200 flex justify-center items-center w-4/5 h-1/4 rounded-2xl">
                     <li>My Profile</li>
                 </a>
-                <a href="personal.php"
-                    class="hover:bg-gray-200 flex justify-center items-center w-4/5 h-1/4 rounded-2xl">
+                <a href="personal.php" class="hover:bg-gray-200 flex justify-center items-center w-4/5 h-1/4 rounded-2xl">
                     <li class="flex justify-center items-center w-full border-b border-gray p-3">
                         Group Chat
                     </li>
@@ -87,34 +84,24 @@ if (!isset($_SESSION["datos"])) {
                     </div>
                     <div class=" flex flex-col my-3">
                         <label for="">Name</label>
-                        <input name="nombre_ch" type="text" placeholder="Enter your name..."
-                            class="  border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl"
-                            value='<?php echo $_SESSION["show_nombre"] ?>'>
+                        <input name="nombre_ch" type="text" placeholder="Enter your name..." class="  border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl" value='<?php echo $_SESSION["show_nombre"] ?>'>
                     </div>
                     <div class=" flex flex-col my-3 w-[416px]">
                         <label for="">Bio</label>
-                        <input name="bio_ch" tipe="text" placeholder="Enter your bio..."
-                            class="  border border-[#BDBDBD] w-full md:w-[416px] h-[91px] pl-4 pr-4 pb-8 rounded-xl"
-                            value='<?php echo $_SESSION["show_bio"] ?>'>
+                        <input name="bio_ch" tipe="text" placeholder="Enter your bio..." class="  border border-[#BDBDBD] w-full md:w-[416px] h-[91px] pl-4 pr-4 pb-8 rounded-xl" value='<?php echo $_SESSION["show_bio"] ?>'>
                     </div>
 
                     <div class=" flex flex-col my-3">
                         <label for="">Phone</label>
-                        <input name="phone_ch" type="text" placeholder="Enter your phone..."
-                            class=" border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl"
-                            value='<?php echo $_SESSION["show_phone"] ?>'>
+                        <input name="phone_ch" type="text" placeholder="Enter your phone..." class=" border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl" value='<?php echo $_SESSION["show_phone"] ?>'>
                     </div>
                     <div class=" flex flex-col my-3">
                         <label for="">Email</label>
-                        <input name="email_ch" type="text" placeholder="Enter your email..."
-                            class=" border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl"
-                            value='<?php echo $_SESSION["show_email"] ?>' required>
+                        <input name="email_ch" type="text" placeholder="Enter your email..." class=" border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl" value='<?php echo $_SESSION["show_email"] ?>' required>
                     </div>
                     <div class=" flex flex-col my-3">
                         <label for="">Password</label>
-                        <input name="password_ch" type="text" placeholder="Enter your new password..."
-                            class=" border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl"
-                            value='<?php echo $_SESSION["show_pass"] ?>' required>
+                        <input name="password_ch" type="password" placeholder="Enter your new password..." class=" border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl" required>
                     </div>
                     <button class=" bg-[#2F80ED] text-white w-[82px] h-[38px] rounded-lg">Save</button>
                 </form>

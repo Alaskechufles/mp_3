@@ -5,7 +5,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $_SESSION["pass_user"] = $_POST["pass"];
 
     $email_usuario = $_SESSION["email_user"];
-    $password_usuario = $_SESSION["pass_user"];
+    $password_usuario = password_hash($_SESSION["pass_user"], PASSWORD_DEFAULT);
+
+
+
+
 
     require("connection.php");
 
@@ -22,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         header("Location: index.php");
         die();
     } else {
-        var_dump($numFilas);
+
         $query = "INSERT INTO usuarios( email,pass) VALUES ('$email_usuario','$password_usuario');";
 
         $insertar = $mysqli->query($query);
@@ -31,6 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
         $resultado2 = $mysqli->query($query2);
+
+
 
         $datos = $resultado2->fetch_assoc();
         $_SESSION["datos"] = $datos;

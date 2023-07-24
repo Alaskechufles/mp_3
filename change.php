@@ -39,16 +39,19 @@ if (!isset($_SESSION["datos"])) {
                 </div>
             </div>
             <ul id="menu" class="hidden flex-col justify-center items-center  h-44 w-48 border rounded-2xl bg-white absolute right-10 top-16 ">
-                <a href="personal.php" class="hover:bg-gray-200 flex justify-center items-center w-4/5 h-1/4 rounded-2xl">
+                <a href="personal.php" class="hover:bg-gray-200 flex justify-start items-center w-4/5 h-1/4 rounded-2xl gap-2">
+                    <img src="./icons/perfil.svg" alt="">
                     <li>My Profile</li>
                 </a>
-                <a href="personal.php" class="hover:bg-gray-200 flex justify-center items-center w-4/5 h-1/4 rounded-2xl">
-                    <li class="flex justify-center items-center w-full border-b border-gray p-3">
+                <a href="personal.php" class="hover:bg-gray-200 flex justify-start items-center w-4/5 h-1/4 rounded-2xl gap-2">
+                    <img src="./icons/group.svg" alt="">
+                    <li>
                         Group Chat
                     </li>
                 </a>
-                <a href="logout.php" class="hover:bg-gray-200 flex justify-center items-center w-4/5 h-1/4 rounded-2xl">
-                    <li>Log out
+                <a href="logout.php" class="hover:bg-gray-200 flex justify-start items-center w-4/5 h-1/4 rounded-2xl gap-2">
+                    <img src="./icons/logout.svg" alt="">
+                    <li class=" text-[#EB5757]">Log out
                     </li>
                 </a>
             </ul>
@@ -86,9 +89,9 @@ if (!isset($_SESSION["datos"])) {
                         <label for="">Name</label>
                         <input name="nombre_ch" type="text" placeholder="Enter your name..." class="  border border-[#BDBDBD] w-full md:w-[416px] h-[52px] pl-4 rounded-xl" value='<?php echo $_SESSION["show_nombre"] ?>'>
                     </div>
-                    <div class=" flex flex-col my-3 w-[416px]">
+                    <div class=" flex flex-col my-3 ">
                         <label for="">Bio</label>
-                        <input name="bio_ch" tipe="text" placeholder="Enter your bio..." class="  border border-[#BDBDBD] w-full md:w-[416px] h-[91px] pl-4 pr-4 pb-8 rounded-xl" value='<?php echo $_SESSION["show_bio"] ?>'>
+                        <input name="bio_ch" tipe="text" placeholder="Enter your bio..." class="  border border-[#BDBDBD] max-w-[80vw] md:max-w-[416px] h-[91px] pl-4 pr-4 pb-8 rounded-xl" value='<?php echo $_SESSION["show_bio"] ?>'>
                     </div>
 
                     <div class=" flex flex-col my-3">
